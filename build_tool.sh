@@ -48,7 +48,7 @@ clean(){
 build_kernel(){
 	export KBUILD_BUILD_USER="zahi0"  
 	export KBUILD_BUILD_HOST="zahi0-server"  
-	make $args wayne_defconfig #修改配置文件
+	make $args lavender_defconfig 
 	if [ $? -ne 0 ]; then
       		exit 0
         fi
